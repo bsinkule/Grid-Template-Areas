@@ -26,7 +26,7 @@
     background-color: rgb(243, 173, 116);
     padding: .5em;
 }`
-11. Add the below code to main.css to make the div.wrapper set to use css grid:
+11. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This wraps all the `grid-area` elements:
 * `.wrapper {
     margin: auto;
     display: grid;
