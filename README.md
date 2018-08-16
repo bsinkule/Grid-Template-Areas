@@ -93,4 +93,4 @@
 ![alt text](./images/gridMedia1000px.png)
 ## Conclusion
 * I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets, laptops and desktops.
-* Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a left side bar for advertising. The possibilities are endless. Enjoy!
+* Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a right side bar for advertising. The possibilities are endless. Enjoy!
