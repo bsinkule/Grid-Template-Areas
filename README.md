@@ -9,9 +9,10 @@
 6. Connect the style sheet to the HTML if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
 7. Paste the below code inside the `<body>` tag to create the elements for the HTML
 * `div.wrapper>header.b+(nav.b>ul>li*4)+main.b+section.section1.b+section.section2.b+aside.b+footer.b`
-* NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created
+> NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created
+![alt text](../images/gridEmmet.png)
 8. Add placeholder content inside the elements. Type the following text inside the specified elements
-* NOTE: When you type `lorem` and a number after it like `lorem30` in VS Code, and then press enter, it will add 30 lorem ipsum words for easy placeholder text
+> NOTE: When you type `lorem` and a number after it like `lorem30` in VS Code, and then press enter, it will add 30 lorem ipsum words for easy placeholder text
 * Type `HEADER HEADER` in `<header>`
 * Type `NAV LINK` in each of the 4 `<li>` tags
 * Type `MAIN CONTENT` & `lorem100` in `<main>`
@@ -75,7 +76,8 @@
             justify-content: space-around;
         }
     }`
-* NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column
+> NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column
+![alt text](../images/gridMedia700px.png)
 16. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout.
 * `@media (min-width: 1000px) {
     .wrapper {
@@ -88,7 +90,7 @@
             "footer footer  footer";
         }
     }`
-
+![alt text](../images/gridMedia1000px.png)
 ## Conclusion
-* You now have a responsive layout that uses CSS Grid - Grid Template Areas, which will look good on a cell phone, tablet and desktop/laptop.
-* There are many many more layout possibilities that can be achieved using Grid Template Areas. If you have some other good CSS Grid Template Area examples, please add your website link to the bottom of this README and make a PULL REQUEST
+* I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets, laptops and desktops.
+* Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a left side bar for advertising. The possibilities are endless. Enjoy!
