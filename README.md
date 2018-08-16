@@ -4,19 +4,19 @@
 1. Fork and clone this repo
 2. In your terminal, `cd` into the folder
 3. In your terminal, run `lite-server`
-4. Open the folder in your code editor - `code .` for VS Code
+4. Open the folder in your code editor, `code .` for VS Code
 5. Create HTML5 boiler-plate
 6. Connect style to header if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
 7. Paste the below code inside the `<body>` tag to create the elements for the HTML
 * `div.wrapper>header.b+(nav.b>ul>li*4)+main.b+section.section1.b+section.section2.b+aside.b+footer.b`
 * NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available and can be selected, then press enter and the elements will be created
 8. Add placeholder content inside the elements. Type the following text inside the specified elements
-* Type `HEADER HEADER` in `header`
-* Type `NAV LINK` in each of the 4 `li` tags
-* Type `MAIN CONTENT` & `lorem100` in `main`
-* Type `lorem50` in both `section` tags
-* Type `SIDE BAR` & `lorem25` in `aside`
-* Type `FOOTER` & `lorem20` in `footer`
+* Type `HEADER HEADER` in `<header>`
+* Type `NAV LINK` in each of the 4 `<li>` tags
+* Type `MAIN CONTENT` & `lorem100` in `<main>`
+* Type `lorem50` in both `<section>` tags
+* Type `SIDE BAR` & `lorem25` in `<aside>`
+* Type `FOOTER` & `lorem20` in `<footer>`
 9. NOTE: Below you will be instructed to paste css into the main.css file. After pasting, make sure to clean up the code so it is in the correct format. You could also use an extension like 'Beautify' to format your code.
 10. Add the below code to main.css so you can see the element containers better:
 * `.b {
@@ -87,3 +87,7 @@
             "footer footer  footer";
         }
     }`
+
+## Conclusion
+* You now have a responsive layout that uses CSS Grid - Grid Template Areas, which will look good on a cell phone, tablet and desktop/laptop.
+* There are many many more layout possibilities that can be achieved using Grid Template Areas. If you have some other good CSS Grid Template Area examples, please add your website link to the bottom of this README and make a PULL REQUEST
