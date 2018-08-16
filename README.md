@@ -27,14 +27,14 @@
     background-color: rgb(243, 173, 116);
     padding: .5em;
 }`
-11. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This wraps all the `grid-area` elements:
+11. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This wraps all the grid-area elements, which we will define in the next step:
 * `.wrapper {
     margin: auto;
     display: grid;
     grid-gap: 15px;
     grid-template-areas: "header" "nav" "main" "section1" "section2" "side" "footer";
 }`
-* We will set the `grid-area`'s for each of the elements in the next step
+> NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will stacked in one column. We will adjust for other screen sizes in steps 15 and 16.
 12. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector:
 * `header {
     grid-area: header;
@@ -76,7 +76,7 @@
             justify-content: space-around;
         }
     }`
-> NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column
+> NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column like in the mobile layout
 ![alt text](./images/gridMedia700px.png)
 16. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout.
 * `@media (min-width: 1000px) {
