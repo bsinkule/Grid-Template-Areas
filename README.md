@@ -12,6 +12,7 @@
 > NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created as shown in the below image
 
 > NOTE: If the emmet shortcut does not work in your editor, you can manually create the HTML elements like the image below
+
 ![alt text](./images/gridEmmet.png)
 8. Add placeholder content inside the elements. Type the following text inside the specified elements
 > NOTE: When you type `lorem` and a number after it like `lorem30` in VS Code, and then press enter, it will add 30 lorem ipsum words for easy placeholder text
@@ -79,6 +80,7 @@
         }
     }`
 > NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column like in the mobile layout
+
 ![alt text](./images/gridMedia700px.png)
 16. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout.
 * `@media (min-width: 1000px) {
@@ -92,6 +94,7 @@
             "footer footer  footer";
         }
     }`
+
 ![alt text](./images/gridMedia1000px.png)
 ## Conclusion
 * I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets, laptops and desktops.
