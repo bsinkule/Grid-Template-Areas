@@ -11,6 +11,7 @@
 * `div.wrapper>header.b+(nav.b>ul>li*4)+main.b+section.section1.b+section.section2.b+aside.b+footer.b`
 * NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available and can be selected, then press enter and the elements will be created
 8. Add placeholder content inside the elements. Type the following text inside the specified elements
+* NOTE: When you type `lorem` and a number after it like `lorem30` in VS Code, and then press enter, it will add 30 lorem ipsum words for easy placeholder text
 * Type `HEADER HEADER` in `<header>`
 * Type `NAV LINK` in each of the 4 `<li>` tags
 * Type `MAIN CONTENT` & `lorem100` in `<main>`
