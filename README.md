@@ -58,7 +58,7 @@
 }`
 13. The webpage is now setup for mobile. All the elements are stacked on top of each other in the order that we set them in the `.wrapper` selector
 14. Now we will add Media Queries `@media` to main.css to format the page to become responsive when the screen is larger
-15. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a 2 column layout. When formated, you will notice how readable the grid template area code is. `grid-template-columns` specifies there will be 2 columns, and `grid-template-areas` lists 2 `grid-area` names per line with quotes around the whole line.
+15. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a 2 column layout. When formated, you will notice how readable the grid template area code is. `grid-template-columns` specifies there will be 2 columns, and `grid-template-areas` lists 2 `grid-area` names per line with quotes around the 2 `grid-area` names.
 * `@media (min-width: 700px) {
     .wrapper {
         grid-template-columns: 1fr 3fr;
