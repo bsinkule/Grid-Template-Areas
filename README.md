@@ -6,7 +6,7 @@
 3. In your terminal, run `lite-server`
 4. Open the folder in your code editor, `code .` for VS Code
 5. Create HTML5 boiler-plate
-6. Connect style to header if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
+6. Connect the style sheet to the HTML if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
 7. Paste the below code inside the `<body>` tag to create the elements for the HTML
 * `div.wrapper>header.b+(nav.b>ul>li*4)+main.b+section.section1.b+section.section2.b+aside.b+footer.b`
 * NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available and can be selected, then press enter and the elements will be created
