@@ -39,8 +39,8 @@
     grid-gap: 15px;
     grid-template-areas: "header" "nav" "main" "section1" "section2" "side" "footer";
 }`
-> NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will stacked in one column. We will adjust for other screen sizes in steps 15 and 16.
-12. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector:
+> NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will be stacked in one column. We will adjust for other screen sizes in steps 15 and 16.
+12. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector we defined above:
 * `header {
     grid-area: header;
 }`
@@ -100,4 +100,5 @@
 > ![alt text](./images/gridMedia1000px.png)
 ## Conclusion
 * I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets, laptops and desktops.
+* I recommend using Flexbox to style the content-elements (i.e. `p`, `img`, `a`, etc.) that you put inside your grid area elements. 
 * Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a right side bar for advertising. The possibilities are endless. Enjoy!
