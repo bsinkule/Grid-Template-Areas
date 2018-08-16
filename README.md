@@ -1,4 +1,4 @@
-# Grid Template Area Step by Step
+# CSS Grid Template Area - Step by Step
 
 ## Steps
 1. Fork and clone this repo
