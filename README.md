@@ -22,6 +22,8 @@
 * Type `lorem50` in both `<section>` tags
 * Type `SIDE BAR` & `lorem25` in `<aside>`
 * Type `FOOTER` & `lorem20` in `<footer>`
+* The page should look more like the below image now
+> ![alt text](./images/gridHtmlWithText.png)
 9. NOTE: Below you will be instructed to paste css into the main.css file. After pasting, make sure to clean up the code so it is in the correct format. You could also use an extension like 'Beautify' to format your code.
 10. Add the below code to main.css so you can see the element containers better:
 * `.b {
