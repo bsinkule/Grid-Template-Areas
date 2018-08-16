@@ -33,7 +33,7 @@
     grid-gap: 15px;
     grid-template-areas: "header" "nav" "main" "section1" "section2" "side" "footer";
 }`
-* We will set the `grid-area` in the next step
+* We will set the `grid-area`'s for each of the elements in the next step
 12. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector:
 * `header {
     grid-area: header;
