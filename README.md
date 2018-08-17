@@ -7,12 +7,9 @@
 4. Open the folder in your code editor, `code .` for VS Code
 5. Create HTML5 boiler-plate
 6. Connect the style sheet to the HTML if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
-7. Paste the below code inside the `<body>` tag to create the elements for the HTML
+7. You can paste the below code inside the `<body>` tag to create the elements for the HTML, OR if the emmet shortcut does not work in your editor, you can manually create the HTML elements like the image below
 * `div.wrapper>header.b+(nav.b>ul>li*4)+main.b+section.section1.b+section.section2.b+aside.b+footer.b`
 > NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created as shown in the below image
-
-> NOTE: If the emmet shortcut does not work in your editor, you can manually create the HTML elements like the image below
-
 > ![alt text](./images/gridEmmet.png)
 8. Add placeholder content inside the elements. Type the following text inside the specified elements
 > NOTE: When you type `lorem` and a number after it like `lorem30` in VS Code, and then press enter, it will add 30 lorem ipsum words for easy placeholder text
