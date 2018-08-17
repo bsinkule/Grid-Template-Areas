@@ -7,9 +7,9 @@
 4. Open the folder in your code editor, `code .` for VS Code
 5. Create HTML5 boiler-plate
 6. Connect the style sheet to the HTML if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
-7. You can paste the below code inside the `<body>` tag to create the elements for the HTML, or if the emmet shortcut does not work in your editor, you can manually create the HTML elements like the image below
+7. You can paste the below code inside the `<body>` tags to create the elements for the HTML, or if the emmet shortcut does not work in your editor, you can manually create the HTML elements like the image below
 * `div.wrapper>header.b+(nav.b>ul>li*4)+main.b+section.section1.b+section.section2.b+aside.b+footer.b`
-> NOTE: After pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created as shown in the below image
+> NOTE: In VS Code, after pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created as shown in the below image
 
 > ![alt text](./images/gridEmmet.png)
 8. Add placeholder content inside the elements. Type the following text inside the specified elements
@@ -22,15 +22,15 @@
 * Type `FOOTER` & `lorem20` in `<footer>`
 * The page should look more like the below image now
 > ![alt text](./images/gridHtmlWithText.png)
-9. NOTE: Below you will be instructed to paste css into the main.css file. After pasting, make sure to clean up the code so it is in the correct format. You could also use an extension like 'Beautify' to format your code.
-10. Add the below code to main.css so you can see the element containers better:
+9. NOTE: Below you will be instructed to paste css code into the main.css file. After pasting, make sure to clean up the code so it is in the correct format. You could also use an extension like 'Beautify' to format your code.
+10. Add the below code to main.css so you can see the element containers better in the browser:
 * `.b {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgb(243, 173, 116);
     padding: .5em;
 }`
-11. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This wraps all the grid-area elements, which we will define in the next step:
+11. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This wraps all the grid-area elements, which will be defined in the next step:
 * `.wrapper {
     margin: auto;
     display: grid;
@@ -60,7 +60,7 @@
 * `footer {
     grid-area: footer;
 }`
-13. The webpage is now setup for mobile. All the elements are stacked on top of each other in the order that we set them in the `.wrapper` selector
+13. The webpage is now setup for mobile. All the elements are stacked on top of each other in the order that we set them in the `.wrapper` selector. Check it out in the browser.
 14. Now we will add Media Queries `@media` to main.css to format the page to become responsive when the screen is larger
 15. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a 2 column layout. When formated like in the image below, you will notice how readable the grid template area code is. `grid-template-columns` specifies there will be 2 columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists 2 `grid-area` names per line with quotes around the 2 `grid-area` names to show what elements will be in each of the 2 columns. This will be more evident when you look at the page in the browser.
 * `@media (min-width: 700px) {
