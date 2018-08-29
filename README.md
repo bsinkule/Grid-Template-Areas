@@ -8,13 +8,15 @@
 5. Create HTML5 boiler-plate
 6. Connect the style sheet to the HTML if it isn't already: `<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>`
 7. You can paste the below code inside the `<body>` tags to create the elements for the HTML, or if the emmet shortcut does not work in your editor, you can manually create the HTML elements like the image below
-* ```css
+
+```css
 .b {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgb(243, 173, 116);
     padding: .5em;
-}```
+}
+```
 > NOTE: In VS Code, after pasting, you might need to delete the last letter `b`, then re-type `b` so the emmet shortcut becomes available/selected, then press enter and the elements will be created as shown in the below image
 
 > ![alt text](./images/gridEmmet.png)
