@@ -6,10 +6,10 @@ In this walk-through you will be pasting css code into the main.css file which w
 ## Steps
 1. Fork and clone this repo
 2. In your terminal, `cd` into the folder
-3. In your terminal, run `lite-server`
-4. Open the folder in your code editor. 
+3. Open the folder in your code editor. 
+4. In your terminal, run `lite-server`
 5. First, open the HTML page and inspect the layout. The main things to notice are that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `header`, `nav`, `main`, 4 `section` elements/containers, `aside` and the `footer`. Later we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
-6. If you look at the site in your browser now, you'll notice it looks pretty cluttered. Add the below code to main.css so you can see the element containers better in the browser. The `border` and `background-color` make it easier to see each container:
+6. If you look at the site in your browser now, you'll notice it looks pretty cluttered. Add the below code to main.css so you can see the element containers better in the browser. The `border` and `background-color` make it easier to see each container. Check it out after pasting and saving:
 ```css
 .b {
     border: 1px solid black;
@@ -56,13 +56,12 @@ footer {
     grid-area: footer;
 }
 ```
-8. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This can now use all the grid-area named elements we just specified above.  
+8. Add the below code to main.css to make the `<div class="wrapper">` element set to use CSS Grid. We can now use all the grid-area named elements we just specified above.  
 We will start by making a mobile layout that will ba a one column layout. The `grid-template-columns` specifies this by listing the single parameter of `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.
-> NOTE: You can use many different sizing parameters for the  `grid-template-columns`, like `px`, `fr`, `%`, etc.
+> NOTE: You can use many different sizing parameters for the  `grid-template-columns`, like `px`, `fr`, `%`, etc.  
 > NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will be stacked in one column. We will adjust for other screen sizes in later steps. Check out the site in the browser.
 ```css
 .wrapper {
-    margin: auto;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 100%;
@@ -99,13 +98,14 @@ This will be more evident when you look at the page in the browser. Check it out
     }
     nav ul {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
 }
 ```
-> NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column like in the mobile layout
+> NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row at 700px instead of a column like in the mobile layout
 
-11. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout. Check it out in the browser.
+11. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout. After pasting and saving, take some time to inspect how the `grid-area` names are used under `grid-template-areas` and how they relate to the layout in the browser.
 ```css
 @media (min-width: 1000px) {
     .wrapper {
@@ -123,5 +123,5 @@ This will be more evident when you look at the page in the browser. Check it out
 
 ## Conclusion
 * I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets and desktops.
-* I recommend using Flexbox to style the content-elements (i.e. `p`, `img`, `a`, etc.) that you put inside your grid area elements, as we did with the `nav ul` in the 700px media query. 
-* Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a right side bar for advertising. The possibilities are endless. Enjoy!
+* I recommend using Flexbox to style the content-elements (i.e. `p`, `img`, `a`, etc.) that you put as children of your grid area elements, as we did with the `nav ul` in the 700px media query. 
+* Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a right sidebar for advertising. The possibilities are endless. Enjoy!
