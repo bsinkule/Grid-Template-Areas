@@ -59,6 +59,7 @@ footer {
 8. Add the below code to main.css to make the `<div class="wrapper">` element set to use CSS Grid Template Areas. We can now use all the `grid-area` named elements we just specified above.  
 We will start by making a mobile layout that will be a one column layout. The `grid-template-columns` specifies this by listing the single parameter of `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.
 > NOTE: You can use many different sizing parameters for the  `grid-template-columns`, like `px`, `fr`, `%`, etc.  
+
 > NOTE: By listing each individual grid area (e.g "head" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will take up one row, all stacked in one column. We will adjust for other screen sizes in later steps. Check out the site in the browser.
 ```css
 .wrapper {
@@ -79,7 +80,7 @@ We will start by making a mobile layout that will be a one column layout. The `g
 ```
 > NOTE: the `grid-gap` adds space between the containers. This is a style choice for the developer. In our case, we are using them to just show the containers better as the site changes with different screen sizes.
 9. Now we will add Media Queries (`@media`) to main.css to format the page to become responsive when the screen is larger
-10. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a two column layout.  
+10. Paste the below code into main.css so when the screen width becomes larger than 700px the webpage changes to a two column layout.  
 >You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be two columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists two `grid-area` names per line with quotes around the two `grid-area` names to show what elements will be in each of the two columns.  
 
 >For example, notice in the first row how `head` is listed twice like `"head head"`, this will make the `<header>` element span both columns in the first row. Also notice how `side` is listed three times in the left column in the third, fourth and fifth rows. This will make the `<aside>` element span those three rows in that column to make a left-sidebar.  
