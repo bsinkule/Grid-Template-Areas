@@ -59,7 +59,7 @@ footer {
 8. Add the below code to main.css to make the `<div class="wrapper">` element set to use CSS Grid Template Areas. We can now use all the `grid-area` named elements we just specified above.  
 We will start by making a mobile layout that will be a one column layout. The `grid-template-columns` specifies this by listing the single parameter of `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.
 > NOTE: You can use many different sizing parameters for the  `grid-template-columns`, like `px`, `fr`, `%`, etc.  
-> NOTE: By listing each individual grid area (e.g "head" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will be in one row, stacked in one column. We will adjust for other screen sizes in later steps. Check out the site in the browser.
+> NOTE: By listing each individual grid area (e.g "head" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will take up one row, all stacked in one column. We will adjust for other screen sizes in later steps. Check out the site in the browser.
 ```css
 .wrapper {
     display: grid;
