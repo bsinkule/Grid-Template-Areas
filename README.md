@@ -124,6 +124,13 @@ We will start by making a mobile layout that will be a one column layout. The `g
     }
 }
 ```
+## A Few Other Points to Note: 
+* Grid areas can only be four-sided (e.g. no L-shaped areas).
+* Grid areas can only be used once on the page (e.g. you can't put the
+nav bar on the top and bottom of the page).
+* You must put the correct amount of grid area names per row as
+specified by the grid-template-columns (e.g. if it is a three column
+layout, there must be three grid area names per row).
 
 ## Conclusion
 * I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets and desktops.
