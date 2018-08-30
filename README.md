@@ -18,7 +18,7 @@ In this walk-through you will be pasting css code into the main.css file which w
     padding: .5em;
 }
 ```
-7. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector that we will add after this code:
+7. Add the below code to main.css to give each of the child container elements, mentioned in step 5, a `grid-area` name so they respond to the `grid-template-areas` names in the `.wrapper` selector that we will add after this code:
 ```css
 header {
     grid-area: head;
