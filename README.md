@@ -127,4 +127,4 @@ We will start by making a mobile layout that will be a one column layout. The `g
 ## Conclusion
 * I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets and desktops.
 * I recommend using Flexbox to style the content-elements (i.e. `<p>`, `<img>`, `<a>`, etc.) that you put as children of your grid area elements, as we did with the `nav ul` in the 700px media query. 
-* Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a right sidebar for advertising. The possibilities are endless. Enjoy!
+* Play around with the design. You could easily add in more sections, or make a four column layout for desktops that includes a right sidebar for advertising. The possibilities are endless. Enjoy!
