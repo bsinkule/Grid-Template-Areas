@@ -1,7 +1,7 @@
 # CSS Grid Template Areas - Step by Step
 
 ## Objective
-In this walk-through you will be pasting css code into the main.css file which will demonstrate how easy it is to use CSS Grid Template Areas to make a responsive web page layout.
+In this walk-through you will be pasting css code into the main.css file which will demonstrate how easy it is to use CSS Grid Template Areas to make a responsive webpage layout.
 
 ## Steps
 1. Fork and clone this repo
@@ -18,7 +18,7 @@ In this walk-through you will be pasting css code into the main.css file which w
     padding: .5em;
 }
 ```
-12. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector that we will add after this code:
+7. Add the below code to main.css to name the grid areas so they respond to the `grid-template-areas` names in the `.wrapper` selector that we will add after this code:
 ```css
 header {
     grid-area: head;
@@ -56,10 +56,10 @@ footer {
     grid-area: footer;
 }
 ```
-11. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This can now use all the grid-area named elements we just specified above.  
-
-We will start by making a mobile layout that will ba a one column layout. The `grid-template-columns` specifies this by just listing parameter, `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.  :
-> NOTE: 
+8. Add the below code to main.css to make the `<div class="wrapper">` element set to use css grid. This can now use all the grid-area named elements we just specified above.  
+We will start by making a mobile layout that will ba a one column layout. The `grid-template-columns` specifies this by listing the single parameter of `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.
+> NOTE: You can use many different sizing parameters for the  `grid-template-columns`, like `px`, `fr`, `%`, etc.
+> NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will be stacked in one column. We will adjust for other screen sizes in later steps. Check out the site in the browser.
 ```css
 .wrapper {
     margin: auto;
@@ -78,11 +78,11 @@ We will start by making a mobile layout that will ba a one column layout. The `g
         "footer";
 }
 ```
-> NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will be stacked in one column. We will adjust for other screen sizes in steps 15 and 16.
-
-13. The webpage is now setup for mobile. All the elements are stacked on top of each other in the order that we set them in the `.wrapper` selector. Check it out in the browser.
-14. Now we will add Media Queries `@media` to main.css to format the page to become responsive when the screen is larger
-15. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a 2 column layout. When formated like in the image below, you will notice how readable the grid template area code is. `grid-template-columns` specifies there will be 2 columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists 2 `grid-area` names per line with quotes around the 2 `grid-area` names to show what elements will be in each of the 2 columns. This will be more evident when you look at the page in the browser.
+> NOTE: the `grid-gap` adds space between the containers. This is a style choice for the developer. In our case, we are using them to just show the containers better as the site changes with different screen sizes.
+9. Now we will add Media Queries (`@media`) to main.css to format the page to become responsive when the screen is larger
+10. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a 2 column layout.  
+You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be 2 columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists 2 `grid-area` names per line with quotes around the 2 `grid-area` names to show what elements will be in each of the 2 columns.  
+This will be more evident when you look at the page in the browser. Check it out after pasting the below code and saving, and then adjust the browser under and over 700px to see the changes.
 ```css
 @media (min-width: 700px) {
     .wrapper {
@@ -105,7 +105,7 @@ We will start by making a mobile layout that will ba a one column layout. The `g
 ```
 > NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row instead of a column like in the mobile layout
 
-16. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout.
+11. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout. Check it out in the browser.
 ```css
 @media (min-width: 1000px) {
     .wrapper {
@@ -122,6 +122,6 @@ We will start by making a mobile layout that will ba a one column layout. The `g
 ```
 
 ## Conclusion
-* I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets, laptops and desktops.
+* I hope this helped show how easy it can be to use CSS Grid Template Areas to achieve responsive layouts that will look good on mobile phones, tablets and desktops.
 * I recommend using Flexbox to style the content-elements (i.e. `p`, `img`, `a`, etc.) that you put inside your grid area elements, as we did with the `nav ul` in the 700px media query. 
 * Play around with the design. You could easily add in more sections, or make a 4 column layout for desktops that includes a right side bar for advertising. The possibilities are endless. Enjoy!
