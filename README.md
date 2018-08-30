@@ -8,7 +8,7 @@ In this walk-through you will be pasting css code into the main.css file which w
 2. In your terminal, `cd` into the folder
 3. Open the folder in your code editor. 
 4. In your terminal, run `lite-server`
-5. First, open the HTML page and inspect the layout. The main things to notice are that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `header`, `nav`, `main`, four `section` elements/containers, `aside` and the `footer`. Later we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
+5. First, open the HTML page and inspect the layout. The main things to notice are that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `<header>`, `<nav>`, `<main>`, four `<section>` elements/containers, `<aside>` and the `<footer>`. Later we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
 6. If you look at the site in your browser now, you'll notice it looks pretty cluttered. Add the below code to main.css so you can see the element containers better in the browser. The `border` and `background-color` make it easier to see each container. Check it out after pasting and saving:
 ```css
 .b {
@@ -82,7 +82,7 @@ We will start by making a mobile layout that will be a one column layout. The `g
 10. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a two column layout.  
 >You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be two columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists two `grid-area` names per line with quotes around the two `grid-area` names to show what elements will be in each of the two columns.  
 
->For example, notice in the first row how `head` is listed twice like `"head head"`, this will make the `header` element span both columns in the first row. Also notice how `side` is listed three times in the left column in the third, fourth and fifth rows. This will make the `aside` element span those three rows in that column to make a left-sidebar.  
+>For example, notice in the first row how `head` is listed twice like `"head head"`, this will make the `<header>` element span both columns in the first row. Also notice how `side` is listed three times in the left column in the third, fourth and fifth rows. This will make the `<aside>` element span those three rows in that column to make a left-sidebar.  
 
 >This will be more evident when you look at the page in the browser. Check it out after pasting the below code and saving, and then adjust the browser under and over 700px to see the changes.
 ```css
