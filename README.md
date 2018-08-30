@@ -8,7 +8,7 @@ In this walk-through you will be pasting css code into the main.css file which w
 2. In your terminal, `cd` into the folder
 3. Open the folder in your code editor. 
 4. In your terminal, run `lite-server`
-5. First, open the HTML page and inspect the layout. The main things to notice are that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `header`, `nav`, `main`, 4 `section` elements/containers, `aside` and the `footer`. Later we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
+5. First, open the HTML page and inspect the layout. The main things to notice are that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `header`, `nav`, `main`, four `section` elements/containers, `aside` and the `footer`. Later we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
 6. If you look at the site in your browser now, you'll notice it looks pretty cluttered. Add the below code to main.css so you can see the element containers better in the browser. The `border` and `background-color` make it easier to see each container. Check it out after pasting and saving:
 ```css
 .b {
@@ -57,7 +57,7 @@ footer {
 }
 ```
 8. Add the below code to main.css to make the `<div class="wrapper">` element set to use CSS Grid. We can now use all the `grid-area` named elements we just specified above.  
-We will start by making a mobile layout that will ba a one column layout. The `grid-template-columns` specifies this by listing the single parameter of `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.
+We will start by making a mobile layout that will be a one column layout. The `grid-template-columns` specifies this by listing the single parameter of `100%`. If there were two parameters, like `60% 40%`, that would specify a two column layout as you will see later.
 > NOTE: You can use many different sizing parameters for the  `grid-template-columns`, like `px`, `fr`, `%`, etc.  
 > NOTE: By listing each individual grid area (e.g "header" "nav" "main" etc.) with quotes around each name, we are setting up our mobile layout first where each element will be stacked in one column. We will adjust for other screen sizes in later steps. Check out the site in the browser.
 ```css
@@ -79,8 +79,8 @@ We will start by making a mobile layout that will ba a one column layout. The `g
 ```
 > NOTE: the `grid-gap` adds space between the containers. This is a style choice for the developer. In our case, we are using them to just show the containers better as the site changes with different screen sizes.
 9. Now we will add Media Queries (`@media`) to main.css to format the page to become responsive when the screen is larger
-10. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a 2 column layout.  
-You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be 2 columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists 2 `grid-area` names per line with quotes around the 2 `grid-area` names to show what elements will be in each of the 2 columns.  
+10. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a two column layout.  
+You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be two columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists two `grid-area` names per line with quotes around the two `grid-area` names to show what elements will be in each of the two columns.  
 This will be more evident when you look at the page in the browser. Check it out after pasting the below code and saving, and then adjust the browser under and over 700px to see the changes.
 ```css
 @media (min-width: 700px) {
@@ -105,7 +105,7 @@ This will be more evident when you look at the page in the browser. Check it out
 ```
 > NOTE: Notice we also added some css to the `nav ul` so the nav links will show in a row at 700px instead of a column like in the mobile layout
 
-11. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a 3 column layout. After pasting and saving, take some time to inspect how the `grid-area` names are used under `grid-template-areas` and how they relate to the layout in the browser.
+11. Paste the below code into main.css so when the screen width gets to 1000px the webpage changes to a three column layout. After pasting and saving, take some time to inspect how the `grid-area` names are used under `grid-template-areas` and how they relate to the layout in the browser.
 ```css
 @media (min-width: 1000px) {
     .wrapper {
