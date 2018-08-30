@@ -80,8 +80,11 @@ We will start by making a mobile layout that will be a one column layout. The `g
 > NOTE: the `grid-gap` adds space between the containers. This is a style choice for the developer. In our case, we are using them to just show the containers better as the site changes with different screen sizes.
 9. Now we will add Media Queries (`@media`) to main.css to format the page to become responsive when the screen is larger
 10. Paste the below code into main.css so when the screen width gets to 700px the webpage changes to a two column layout.  
-You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be two columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists two `grid-area` names per line with quotes around the two `grid-area` names to show what elements will be in each of the two columns.  
-This will be more evident when you look at the page in the browser. Check it out after pasting the below code and saving, and then adjust the browser under and over 700px to see the changes.
+>You will notice how readable the grid template area code is. `grid-template-columns` specifies there will be two columns (the left column is 1fr (i.e. 25%) and the right will be 3fr (i.e. 75%)). The `grid-template-areas` lists two `grid-area` names per line with quotes around the two `grid-area` names to show what elements will be in each of the two columns.  
+
+>For example, notice in the first row how `head` is listed twice like `"head head"`, this will make the `header` element span both columns in the first row. Also notice how `side` is listed three times in the left column in the third, fourth and fifth rows. This will make the `aside` element span those three rows in that column to make a left-sidebar.  
+
+>This will be more evident when you look at the page in the browser. Check it out after pasting the below code and saving, and then adjust the browser under and over 700px to see the changes.
 ```css
 @media (min-width: 700px) {
     .wrapper {
