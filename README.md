@@ -124,7 +124,7 @@ We will start by making a mobile layout that will be a one column layout. The `g
     }
 }
 ```
-## A Few Other Points to Note: 
+## A Few Other Points to Note
 * Grid areas can only be four-sided (e.g. no L-shaped areas).
 * Grid areas can only be used once on the page (e.g. you can't put the
 nav bar on the top and bottom of the page).
