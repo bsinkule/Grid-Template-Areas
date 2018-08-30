@@ -8,7 +8,7 @@ In this walk-through you will be pasting css code into the main.css file which w
 2. In your terminal, `cd` into the folder
 3. Open the folder in your code editor. 
 4. In your terminal, run `lite-server`
-5. First, open the HTML page and inspect the layout. The main things to notice are that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `<header>`, `<nav>`, `<main>`, four `<section>` elements/containers, `<aside>` and the `<footer>`. Later in main.css we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
+5. First, open the HTML page and inspect the layout. The main thing to notice is that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `<header>`, `<nav>`, `<main>`, four `<section>` elements/containers, `<aside>` and the `<footer>`. Later in main.css we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
 6. If you look at the site in your browser now, you'll notice it looks pretty cluttered. Add the below code to main.css so you can see the element containers better in the browser. The `border` and `background-color` make it easier to see each container. Check it out after pasting and saving:
 ```css
 .b {
