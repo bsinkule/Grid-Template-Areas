@@ -11,11 +11,10 @@ In this walk-through you will be pasting css code into the main.css file which w
 5. First, open the HTML page and inspect the layout. The main thing to notice is that there is a `<div class="wrapper">` element which is the parent (i.e. wrapper) of `<header>`, `<nav>`, `<main>`, four `<section>` elements/containers, `<aside>` and the `<footer>`. Later in main.css we will assign those child elements `grid area` names, which will be the reference that the `grid-template-areas` code will reference and use to lay out the page.
 6. If you look at the site in your browser now, you'll notice it looks pretty cluttered. Add the below code to main.css so you can see the element containers better in the browser. The `border` and `background-color` make it easier to see each container. Check it out after pasting and saving:
 ```css
-.b {
+.box {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgb(243, 173, 116);
-    padding: .5em;
 }
 ```
 7. Add the below code to main.css to assign each of the child container elements, mentioned in step 5, a `grid-area` name so they respond to the `grid-template-areas` names in the `.wrapper` selector that we will add after this code:
